@@ -12,7 +12,11 @@ def age_func_outside_class(self):
     print(f'{self.name} is {self.age} old.')
 
 
-klass = type('klass', (KlassBase,), {'default':'The default value', 'person_age':age_func_outside_class})
+klass = type(
+    'klass', # Class name
+     (KlassBase,),  # Base classes
+     {'default':'The default value', 'person_age':age_func_outside_class} # class attribiutes.
+     )
 
 k=klass('Reza',23)
 k.hello()
