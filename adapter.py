@@ -44,7 +44,7 @@ def main():
     adapted = Adapter(motor, wheeler=motor.TwoWheeler)
     adapteds_list.append(adapted)
     
-    truck = Truck()
+    truck = Truck() 
     adapted = Adapter(truck, wheeler=truck.EightWheeler)
     adapteds_list.append(adapted)
     
