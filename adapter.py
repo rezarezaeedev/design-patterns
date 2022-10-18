@@ -22,12 +22,12 @@ class Car:
         return 'Four Wheeler'
 
 class Adapter:
-    # def __init__(self, vehicle, wheeler_method):
-    #     self.vehicle  = vehicle
-    #     self.vehicle.wheeler = wheeler_method
-    def __init__(self, vehicle, **adapted_methods):
+    def __init__(self, vehicle, wheeler):
         self.vehicle  = vehicle
-        self.vehicle.__dict__.update(adapted_methods)
+        self.vehicle.wheeler = wheeler
+    # def __init__(self, vehicle, **adapted_methods):
+    #     self.vehicle  = vehicle
+    #     self.vehicle.__dict__.update(adapted_methods)
 
     def __getattr__(self, attr):
         """All non-adapted calls are passed to the vehicle object"""
