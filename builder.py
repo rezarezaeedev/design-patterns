@@ -2,7 +2,7 @@
 read more in 'Dive into design pattern' book or https://refactoring.guru/design-patterns/builder
 Builder is a creational design pattern, let's your construct complex object step by step and more simple. The pattern allows you to produce different types and representations of an object using the same construction code.
     3 section: 1.Concrete Builders, 2.Director
--- E.g: About house
+-- E.g: About Car
 '''
 from abc import ABC, abstractmethod
 
