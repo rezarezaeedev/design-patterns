@@ -5,7 +5,7 @@ Builder is a creational design pattern, let's your construct complex object step
 -- E.g: About house
 '''
 from abc import ABC, abstractmethod
-from ctypes import sizeof
+
 
 class Car:
     def __init__(self) -> None:
